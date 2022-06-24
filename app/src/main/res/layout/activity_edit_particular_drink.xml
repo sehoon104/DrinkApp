@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditParticularDrink">
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink Title:"
+        android:id="@+id/titleForDrinkTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/particularDrinkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/titleForDrinkTitle"
+        android:width="260dp"
+        android:maxLength="64"
+        android:text="Starbucks Latte"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/particularDrinkImage"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/particularDrinkTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/coffee_mug"
+        app:layout_constraintHeight="250dp"/>
+
+    <Button
+        android:id="@+id/changeParticularDrinkImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Image"
+        app:layout_constraintTop_toBottomOf="@id/particularDrinkImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/titleForDrinkDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/changeParticularDrinkImage"
+        android:text="Description:"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/particularDrinkDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/titleForDrinkDescription"
+        app:layout_constraintTop_toBottomOf="@id/changeParticularDrinkImage"
+
+        android:width="280dp"
+        android:maxLength="124"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:scrollHorizontally="false"
+        android:text="Contains sugar, coffee, and milk"/>
+
+    <TextView
+        android:id="@+id/titleForCaffeineContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/particularDrinkDescription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="mg of Caffeine: "
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/particularDrinkCaffeineContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/particularDrinkDescription"
+        app:layout_constraintLeft_toRightOf="@id/titleForCaffeineContent"
+        android:inputType="number"
+        android:text="100"
+        android:maxLength="5"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/titleForDrinkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleForCaffeineContent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Type of Drink: "/>
+
+    <Spinner
+        android:id="@+id/particularDrinkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleForCaffeineContent"
+        app:layout_constraintLeft_toRightOf="@id/titleForDrinkType"
+        android:entries="@array/drinkType"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/titlefoDrinkPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleForDrinkType"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Price: "
+        android:padding="10dp"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/particularDrinkPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleForDrinkType"
+        app:layout_constraintLeft_toRightOf="@id/titlefoDrinkPrice"
+        android:inputType="number"
+        android:maxLength="9"
+        android:text="9.99"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/titleforDrinkDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titlefoDrinkPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Discount: "
+        android:padding="10dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/particularDrinkDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titlefoDrinkPrice"
+        app:layout_constraintLeft_toRightOf="@id/titleforDrinkDiscount"
+        android:inputType="number"
+        android:maxLength="9"
+        android:text="9.99"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:id="@+id/particularDrinkCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Cancel"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/particularDrinkDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/particularDrinkCancelButton"
+        app:layout_constraintRight_toRightOf="@id/particularDrinkSaveButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Delete Drink"
+        android:background="@drawable/border_radius_button"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/particularDrinkSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Save"
+        android:background="@drawable/border_radius_button"
+        android:layout_margin="10dp"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

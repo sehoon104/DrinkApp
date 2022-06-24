@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryStatusPage">
+<pl.droidsonroids.gif.GifImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/doordrinkloading"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:visibility="invisible"
+    android:id="@+id/gifTea"/>
+
+    <TextSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/merchantTitleForStatus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#777373"
+            android:textSize="50sp"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center"
+            android:text="No Delivery in Progress"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#777373"
+            android:textSize="50sp"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center"
+            android:text="No Delivery in Progress"/>
+    </TextSwitcher>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userHelpMessage"
+        android:textColor="#9C9595"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Please make an order by tapping a merchant's title card on the map"
+        app:layout_constraintTop_toBottomOf="@id/merchantTitleForStatus"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/drinkForStatus" android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintTop_toBottomOf="@id/merchantTitleForStatus" android:layout_marginTop="45dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

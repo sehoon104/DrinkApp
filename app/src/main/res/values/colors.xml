@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="usc_red">#bf0000</color>
+    <color name="usc_red_dark">#910000</color>
+    <color name="usc_yellow">#ffcc00</color>
+
+    <color name="yellow_text">#f7d965</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#444444</color>
+
+</resources>

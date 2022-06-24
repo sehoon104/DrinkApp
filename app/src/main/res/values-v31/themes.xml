@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/usc_red_dark
+        </item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+
+        <item name="android:windowSplashScreenBrandingImage">@drawable/relax_text_image</item>
+    </style>
+</resources>

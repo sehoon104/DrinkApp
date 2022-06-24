@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navMapPage"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="@string/navMapPageTitle" />
+    <item
+        android:id="@+id/navDeliveryStatus"
+        android:icon="@drawable/ic_baseline_inbox_24"
+        android:title="@string/navDeliveryStatus" />
+    <item
+        android:id="@+id/navPlotScreen"
+        android:icon="@drawable/ic_baseline_pie_chart_24"
+        android:title="@string/navPlotScreen" />
+    <item
+        android:id="@+id/navSettingsPage"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/navSettingsPageTitle" />
+    <item
+        android:id="@+id/navLogout"
+        android:icon="@drawable/ic_baseline_keyboard_return_24"
+        android:title="@string/navLogout" />
+</menu>

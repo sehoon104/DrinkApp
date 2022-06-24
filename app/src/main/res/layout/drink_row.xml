@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/drink_border_divider"
+    android:layout_marginBottom="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:paddingLeft="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/drinkTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                app:layout_constraintRight_toRightOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/drinkImage"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/coffee_mug"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                app:layout_constraintRight_toRightOf="@+id/guideline4"
+
+                app:layout_constraintTop_toBottomOf="@id/drinkTitle" />
+
+            <TextView
+                android:id="@+id/drinkTypeData"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                app:layout_constraintRight_toRightOf="@+id/guideline4"
+
+                app:layout_constraintTop_toBottomOf="@id/drinkTitle" />
+
+            <TextView
+                android:id="@+id/drinkDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:padding="5dp"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/drinkImage" />
+
+            <TextView
+                android:id="@+id/drinkCaffeine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:padding="5dp"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/drinkDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drinkPrice"
+                android:text="$9.99"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@id/drinkCaffeine"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drinkDiscount"
+                android:text="Discount: $2.22"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/drinkPrice"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drinkTotalPrice"
+                android:text="$7.77"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/drinkDiscount"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                />
+
+            <TextView
+                android:id="@+id/uid"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="uid"
+                app:layout_constraintLeft_toLeftOf="@id/guideline3"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintGuide_percent="0.07"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.93" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
